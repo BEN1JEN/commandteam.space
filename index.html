@@ -2,8 +2,18 @@
 <html>
   <head>
     <title>Command Team</title>
+    <script>
+      function go() {
+        document.getElementById("output-c").value = (document.getElementById("input-benunit").value-69)/(420-69)*100;
+        document.getElementById("output-benunit").value = (document.getElementById("input-c").value*(420-69)/100)+69;
+      }
+    </script>
   </head>
   <body>
     Woo minecraft server ip is also <pre>commandteam.space</pre>.
+    <h2>Unit Converter</h2>
+    <p>Input benunit</p><input id="input-benunit" placeholder="69"></input><p>= </p><p id="output-c"></p>
+    <p>Input C</p><input id="input-c" placeholder="100"></input><p>= </p><p id="output-benunit"></p>
+    <button onclick="go()" />
   </body>
 </html>
